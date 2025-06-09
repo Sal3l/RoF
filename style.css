@@ -16,6 +16,12 @@ body {
     padding: 0 20px;
 }
 
+.containerMenu {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Header */
 header {
     background: rgba(255, 255, 255, 0.95);
@@ -78,7 +84,7 @@ header .container {
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop');
+                url('imgFundoBanner.PNG');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -90,13 +96,13 @@ header .container {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin-bottom: 1rem;
     font-weight: bold;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     opacity: 0.9;
 }
 
@@ -117,8 +123,8 @@ header .container {
 }
 
 .history-image img {
-    width: 100%;
-    border-radius: 10px;
+    width: 80%;
+    border-radius: 16px;
 }
 
 .history-text {
@@ -126,19 +132,20 @@ header .container {
 }
 
 .history-text h2 {
-    color: #ff5757;
-    font-size: 2.5rem;
+    color: #ff3030;
+    font-size: 5rem;
     margin-bottom: 1rem;
 }
 
 .history-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #ff3030;
 }
 
 /* Menu Section */
 .menu-section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: #ff5757;
     color: white;
     text-align: center;
@@ -152,7 +159,7 @@ header .container {
 .menu-categories {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
     flex-wrap: wrap;
 }
 
@@ -161,10 +168,10 @@ header .container {
 }
 
 .menu-item img {
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 500px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 18px;
     margin-bottom: 1rem;
 }
 
@@ -183,8 +190,17 @@ header .container {
     gap: 3rem;
 }
 
+.favourites-content h3 {
+    font-size: 2.5rem;
+    color: #ff5757;
+    margin-bottom: 3rem;
+}
+
 .favourites-list {
     flex: 1;
+    flex-direction: row;
+    display: flex;
+    gap: 4rem;
 }
 
 .favourites-list h3 {
@@ -218,7 +234,7 @@ header .container {
 
 .favourites-image img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 18px;
 }
 
 /* Dishes of the Day */
@@ -237,27 +253,28 @@ header .container {
 .dishes-grid {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
 .dish-card {
     background: white;
     color: #333;
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 1rem;
-    width: 250px;
+    width: 300px;
 }
 
 .dish-card img {
     width: 100%;
-    height: 150px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
 }
 
 .dish-card h3 {
+    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
@@ -266,7 +283,7 @@ header .container {
     color: white;
     border: none;
     padding: 0.8rem 2rem;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
 }
