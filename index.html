@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots of Flavor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-circle">🍽️</span>
+            </div>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+                <a href="#">📘</a>
+                <a href="#">📺</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Roots of Flavor</h1>
+            <p>Da Polonia para sua mesa, com amor e leveza</p>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history">
+        <div class="container">
+            <div class="history-content">
+                <div class="history-image">
+                    <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Chef">
+                </div>
+                <div class="history-text">
+                    <h2>HISTORY</h2>
+                    <p>Roots of Flavor was born from the tradition of grandmother Eva, who in Poland transformed simple ingredients into unforgettable flavors. Inspired by her recipes and the warmth of her kitchen, we created a restaurant that combines Polish cuisine with modern touches, serving dishes that awaken memories and warm the heart.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2>MENU</h2>
+            <div class="menu-categories">
+                <div class="menu-item">
+                    <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Soup">
+                    <h3>Soup</h3>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Salad">
+                    <h3>Salad</h3>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Pasta">
+                    <h3>Pasta</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Favourites -->
+    <section class="menu-favourites">
+        <div class="container">
+            <div class="favourites-content">
+                <div class="favourites-list">
+                    <h3>Menu favourites</h3>
+                    
+                    <div class="menu-category">
+                        <h4>PIEROGI</h4>
+                        <ul>
+                            <li>Pierogi ruskie - $12</li>
+                            <li>Pierogi z kapustą - $11</li>
+                            <li>Pierogi z mięsem - $13</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category">
+                        <h4>SOUPS</h4>
+                        <ul>
+                            <li>Barszcz czerwony - $8</li>
+                            <li>Rosół - $9</li>
+                            <li>Żurek - $10</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category">
+                        <h4>SALADS</h4>
+                        <ul>
+                            <li>Mizeria - $7</li>
+                            <li>Sałatka jarzynowa - $8</li>
+                            <li>Kapusta kiszona - $6</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category">
+                        <h4>KOTLETY SCHABOWE</h4>
+                        <ul>
+                            <li>Kotlet schabowy tradycyjny - $15</li>
+                            <li>Kotlet z ziemniakami - $16</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="favourites-image">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Traditional Polish Food">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dishes of the Day -->
+    <section class="dishes-day">
+        <div class="container">
+            <h2>DISHES OF THE DAY</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Pierogi">
+                    <h3>Pierogi</h3>
+                    <button class="order-btn" onclick="orderDish('Pierogi')">ORDER</button>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Zurek">
+                    <h3>Zurek</h3>
+                    <button class="order-btn" onclick="orderDish('Zurek')">ORDER</button>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Kotlet schabowy">
+                    <h3>Kotlet schabowy</h3>
+                    <button class="order-btn" onclick="orderDish('Kotlet schabowy')">ORDER</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery System -->
+    <section class="delivery-system">
+        <div class="container">
+            <div class="delivery-content">
+                <div class="delivery-image">
+                    <img src="https://images.pexels.com/photos/3990842/pexels-photo-3990842.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" alt="Delivery Person">
+                </div>
+                <div class="delivery-text">
+                    <h2>DELIVERY SYSTEM</h2>
+                    <p>At Roots of Flavor, you choose how you want to live the experience: whether in the cozy atmosphere of our physical restaurant, with a welcoming atmosphere and the aroma of fresh spices, or enjoying it in the comfort of your home - we deliver tradition to your door.</p>
+                    <button class="delivery-btn" onclick="orderDelivery()">ORDER YOURS NOW!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-images">
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&fit=crop" alt="Food 1">
+                    <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&fit=crop" alt="Food 2">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&fit=crop" alt="Food 3">
+                </div>
+                <div class="footer-info">
+                    <p>Experience <strong>Roots of Flavor</strong> today.</p>
+                    <div class="contact-info">
+                        <div>
+                            <strong>PHONE NUMBER</strong><br>
+                            +1 (555) 123-4567
+                        </div>
+                        <div>
+                            <strong>EMAIL ADDRESS</strong><br>
+                            info@rootsofflavor.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
